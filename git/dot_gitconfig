@@ -51,3 +51,5 @@
 	uncommit = reset --soft HEAD~1
 	# Remove file(s) from Git but not from disk
 	untrack = rm --cache --
+[credential "https://dev.azure.com"]
+	useHttpPath = true
