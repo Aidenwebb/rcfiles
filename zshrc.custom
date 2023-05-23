@@ -29,3 +29,6 @@ setopt hist_reduce_blanks
 
 # Remove all duplicates from history
 setopt hist_ignore_all_dups
+
+# Set default docker host for userspace-podman
+export DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock
