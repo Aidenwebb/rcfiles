@@ -1,3 +1,6 @@
+[user]
+	name = Aiden Arnkels-Webb
+	email = aiden@aidenwebb.com
 [includeIf "gitdir:~/"]
 	path = .gitconfig-default
 [includeIf "gitdir:work/"]
