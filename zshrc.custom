@@ -2,7 +2,7 @@
 # Add to PATHS
 
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+if ! [[ "$PATH" =~ "$HOME/.dotnet:$HOME/.local/bin:$HOME/bin:" ]]
 then
     PATH="$HOME/.dotnet:$HOME/.local/bin:$HOME/bin:$PATH"
 fi
