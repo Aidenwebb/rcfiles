@@ -2,9 +2,18 @@
 # Add to PATHS
 
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/.dotnet:$HOME/.local/bin:$HOME/bin:" ]]
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
-    PATH="$HOME/.dotnet:$HOME/.local/bin:$HOME/bin:$PATH"
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+
+# DotNet
+
+export "DOTNET_ROOT=$HOME/.dotnet"
+
+if ! [[ "$PATH" =~ "$HOME/.dotnet:$HOME/.dotnet/tools:" ]]
+then
+    PATH="$HOME/.dotnet:$HOME/.dotnet/tools:$PATH"
 fi
 
 export PATH
