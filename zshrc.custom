@@ -4,7 +4,7 @@
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+    PATH="$HOME/.dotnet:$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 
 export PATH
@@ -31,4 +31,4 @@ setopt hist_reduce_blanks
 setopt hist_ignore_all_dups
 
 # Set default docker host for userspace-podman
-export DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock
+# export DOCKER_HOST=unix:///run/user/$UID/podman/podman.sock
